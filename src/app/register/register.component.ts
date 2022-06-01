@@ -1,30 +1,32 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { TUser } from '../models/User';
 import { UserService } from '../services/user.service';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.css']
 })
-export class LoginComponent implements OnInit {
+export class RegisterComponent implements OnInit {
+
   user: TUser = {
     name: "",
     email: "",
     password: ""
   }
+
   constructor(
     private userService: UserService,
-    private router: Router,
-    private route: ActivatedRoute
-  ) { }
+    private router: Router  
+    
+    ) { }
 
   ngOnInit(): void {
   }
 
-  onSubmit() {
-    this.userService.login(this.user).subscribe(user => {
+  onRegister() {
+    this.userService.register(this.user).subscribe(user => {
       console.log(user);
       setTimeout(() => {
         this.router.navigateByUrl('/products')
@@ -32,5 +34,4 @@ export class LoginComponent implements OnInit {
     })
     console.log(this.user);
   }
-
 }

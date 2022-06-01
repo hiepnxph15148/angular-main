@@ -41,7 +41,7 @@ export class ProductAddComponent implements OnInit {
     this.productService.addProduct(this.product).subscribe(data => {
       setTimeout(() => {
         // redirect về product list
-        this.router.navigateByUrl('/product');
+        this.router.navigateByUrl('/products');
       }, 2000)
     });
   }

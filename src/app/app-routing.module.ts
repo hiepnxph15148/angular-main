@@ -6,11 +6,13 @@ import { ProductAddComponent } from './product-add/product-add.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductComponent } from './product/product.component';
+import { RegisterComponent } from './register/register.component';
 import { AdminGuard } from './services/guards/admin.guard';
 
 const routes: Routes = [  
   {path:"about",component:AboutComponent},
-  {path:"register",component:LoginComponent},
+  {path:"register",component:RegisterComponent},
+  {path:"login",component:LoginComponent},
   {
     path:"products",children:[
       {path:"" ,redirectTo:"list",pathMatch:"full"},

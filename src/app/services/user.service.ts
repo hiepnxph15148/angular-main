@@ -5,8 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UserService {
-  API_URL = 'http://localhost:3001/users'
-
+  API_URL = 'http://localhost:3001'
 
   constructor(private http:HttpClient) { }
 
@@ -15,6 +14,6 @@ export class UserService {
   }
 
   register(user:any){
-    return this.http.post(`${this.API_URL}/login`,user)
+    return this.http.post(`${this.API_URL}/register`,user)
   }
 }

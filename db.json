@@ -27,23 +27,26 @@
   ],
   "users": [
     {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$HXQoBkaaN0GTUJCTMHqyvOPDCVAmXO3NVU6MfLn1Z/Gpe4X.9uzky",
+      "name": "",
       "id": 1
     },
     {
-      "email": "admin@gmail.com",
-      "password": "$2a$10$XA8kAmMSmJu7xtEcsoryCuTxktaI9gRBCgb.1NX.BgNQ2jmbgwkl6",
+      "email": "admin2@gmail.com",
+      "password": "$2a$10$uu/m9GOIzpG8hZegdQGWCOWydzFKzkAdQ.OPqzCaNRCAd14vUmZte",
       "name": "Hiệp",
       "id": 2
     },
     {
-      "email": "admin2@gmail.com",
-      "password": "$2a$10$1niUZ8Sr069hWR8SayQMzupL/jsOcuAsLJuKTn.J565A4vt28cyDC",
+      "email": "hiepnxph@gmail.com",
+      "password": "$2a$10$5v6bXnYJWoOLiT69mE6ADOb4CfwtnydUMDlVeaofDNA/Dh1d3/Zfm",
       "name": "Hiệp",
       "id": 3
     },
     {
-      "email": "admin4@gmail.com",
-      "password": "$2a$10$RfEYTTXVXFDDBm8y5H39Fu8omAOeK9vW86zOe0meVeJjrjzkqfz42",
+      "email": "ngankien2012@gmail.com",
+      "password": "$2a$10$7iJZECMmT/b4U/v7sGOiU.cu9.E6dvmicfEcEZSI0Bjno4BpVpLV2",
       "name": "Hiệp",
       "id": 4
     }
