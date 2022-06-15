@@ -1,0 +1,27 @@
+
+<form #formAdd="ngForm" (ngSubmit)="onUpdate()">
+    <input type="text" 
+    [(ngModel)]="post.title"
+    placeholder="name"
+    name="name"
+    #name="ngModel" 
+    required
+    minlength="2">
+    <input type="text" 
+    [(ngModel)]="post.image"
+     placeholder="image" 
+     name="image"
+     #image="ngModel" 
+     required
+     minlength="2">
+    <input type="text"
+     [(ngModel)]="post.desc"
+     placeholder="desc"
+    name="desc"
+    #desc="ngModel" 
+    required
+    minlength="2"
+    >
+    
+    <button [disabled]="!formAdd.valid">Update</button>
+</form>

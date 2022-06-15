@@ -1,0 +1,61 @@
+<body>
+    <header class="py-4">
+        <div class=" w-[952px] haha mx-auto flex justify-between">
+            <div class="logo"></div>
+            <div class="navbar">
+                <ul class="flex ">
+                    <li><a class="px-2" routerLink="work">Works</a></li>
+                    <li><a class="px-2"routerLink="/blog">Blog</a></li>
+                    <li><a class="px-2" routerLink="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container w-[952px] mx-auto py-4">
+        <div class="tilte-blog">
+            <h2 class="text-3xl font-bold">Work</h2><br>
+            <div *ngFor="let project of Project" class="post py-4">
+                <div class="post-img">
+                   <a routerLink="/work/{{project.id}}"> <img src="{{project.image}}"
+                        alt=""></a>
+                </div>
+                <div class="title-post ">
+                    <h2 class="font-bold text-2xl">{{project.name}}</h2><br>
+                    <div class="post-category flex">
+                        <a href="" class=" text-[#FFFFFF] rounded-lg bg-[#142850] text-center p-2">{{project.createAt}}</a>
+                        <a href=""class="pl-3 p-2 text-[#8695A4]">{{project.categoryProjects.name}}</a>
+                    </div><br>
+                    <p>{{project.shortDesc}}</p>
+                </div>
+            </div><br>
+            <hr><br>
+            <div class="post">
+                <div class="post-img">
+                   <a href=""> <img src="https://res.cloudinary.com/fptpolytechnic/image/upload/v1654706812/Rectangle_40_zx0xis.png"
+                        alt=""></a>
+                </div>
+                <div class="title-post">
+                    <h2 class="font-bold text-2xl">Components</h2><br>
+                    <div class="post-category flex">
+                        <a href="" class=" text-[#FFFFFF] rounded-lg bg-[#142850] text-center p-2">2018</a>
+                        <a href=""class="pl-3 p-2 text-[#8695A4]">Components, Design</a>
+                    </div><br>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua
+                         dolor do amet sint.Velit officia consequat duis enim velit
+                          mollit.Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div><br>
+            <hr><br>
+        </div>
+    </div>
+    <footer class=" mx-auto">
+        
+        <div class="footer">
+            <a href=""><img src="https://res.cloudinary.com/fptpolytechnic/image/upload/v1654686821/Vector_yjb74e.png" alt=""></a>
+            <a href=""><img src="https://res.cloudinary.com/fptpolytechnic/image/upload/v1654686821/Linkedin_czscpf.png" alt=""></a>
+            <a href=""><img src="https://res.cloudinary.com/fptpolytechnic/image/upload/v1654686821/fb_zxhrds.png" alt=""></a>
+            <a href=""><img src="https://res.cloudinary.com/fptpolytechnic/image/upload/v1654686821/fb_zxhrds.png" alt=""></a>
+        </div>
+        <p class="text-center">Copyright ©2020 All rights reserved </p>
+     
+     </footer>

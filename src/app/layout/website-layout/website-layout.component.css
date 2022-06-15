@@ -1,0 +1,95 @@
+.banner {
+    display: grid;
+    grid-template-columns: auto 243px;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 243px auto;
+    grid-gap: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+.footer a{
+    padding: 20px;
+}
+
+.contact-desc {
+    letter-spacing: 1px;
+}
+.ten {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    /* or 125% */
+
+    text-align: center;
+}
+.post-title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+}
+
+@media (max-width: 640px) {
+    .post-title {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hia a {
+        visibility: hidden;
+    }
+
+    .at {
+        justify-content: center;
+    }
+
+    .ti {
+        text-align: center;
+    }
+
+    .post {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .post-img img {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .fucture_img img {
+        margin: 0 auto;
+    }
+
+    .fucture_content {
+        text-align: center;
+    }
+    #hi22{
+        width: 100%;
+    }
+    .hi222{
+        width: 100%;
+    }
+    .post-title{
+        width: auto;
+    }
+    .haha{
+        width: 100%;
+    }
+    .phuto{
+        width: auto;
+    }
+    
+}

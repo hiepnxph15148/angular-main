@@ -1,0 +1,21 @@
+
+<form #formAdd="ngForm" (ngSubmit)="onSubmit()">
+    <input type="text" 
+    [(ngModel)]="post.title"
+    placeholder="name"
+  
+    >
+    <input type="string" 
+    [(ngModel)]="post.image"
+     placeholder="image" 
+     name="image"
+     #image="ngModel" 
+     required
+     minlength="2">
+    <input type="string"
+     [(ngModel)]="post.desc"
+     placeholder="desc"
+    >
+    
+    <button >Add</button>
+</form>

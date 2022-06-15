@@ -1,6 +1,8 @@
 export interface TUser {
-    id?: number,
+    id?:number,
     name: string,
-    email: string,
-    password: string
+    position: string,
+    about: string,
+    cv: string,
+    image: string,
 }

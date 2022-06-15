@@ -27,28 +27,89 @@
   ],
   "users": [
     {
-      "email": "admin@gmail.com",
-      "password": "$2a$10$HXQoBkaaN0GTUJCTMHqyvOPDCVAmXO3NVU6MfLn1Z/Gpe4X.9uzky",
-      "name": "",
-      "id": 1
+      "id": 1,
+      "name": "Hiệp",
+      "position": "Front End Developer",
+      "about": "",
+      "image": "https://res.cloudinary.com/fptpolytechnic/image/upload/v1644301224/xyprkn4snppzfdd82d7p.jpg",
+      "cv": ""
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Making a design system from scratch",
+      "categoryPostId": 1,
+      "createAt": "12 Feb 2020",
+      "image": "https://res.cloudinary.com/fptpolytechnic/image/upload/v1654706812/Rectangle_40_zx0xis.png",
+      "shortDesc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet"
     },
     {
-      "email": "admin2@gmail.com",
-      "password": "$2a$10$uu/m9GOIzpG8hZegdQGWCOWydzFKzkAdQ.OPqzCaNRCAd14vUmZte",
-      "name": "Hiệp",
-      "id": 2
+      "id": 2,
+      "title": "Making a design system from scratch",
+      "categoryPostId": 2,
+      "createAt": "12 Feb 2020",
+      "shortDesc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "image": "https://res.cloudinary.com/fptpolytechnic/image/upload/v1654685195/z3474554603474_f4842945579d4df5cdc6c0a45fab8468_uxzatl.jpg",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet"
+    }
+  ],
+  "categoryPosts": [
+    {
+      "id": 1,
+      "name": "Express, Handlebars"
     },
     {
-      "email": "hiepnxph@gmail.com",
-      "password": "$2a$10$5v6bXnYJWoOLiT69mE6ADOb4CfwtnydUMDlVeaofDNA/Dh1d3/Zfm",
-      "name": "Hiệp",
-      "id": 3
+      "id": 2,
+      "name": "Express, Handlebars"
+    }
+  ],
+  "IProjects": [
+    {
+      "id": 1,
+      "name": "Designing Dashboards ",
+      "image": "https://res.cloudinary.com/fptpolytechnic/image/upload/v1654685195/z3474554169902_fc07ca811cdf51da9dc760a9328c2f5f_xsa9t8.jpg",
+      "createAt": "2020",
+      "categoryProjectsId": 1,
+      "shortDesc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet",
+      "categoryProjects": {
+        "id": 1,
+        "name": "Dashboard"
+      }
     },
     {
-      "email": "ngankien2012@gmail.com",
-      "password": "$2a$10$7iJZECMmT/b4U/v7sGOiU.cu9.E6dvmicfEcEZSI0Bjno4BpVpLV2",
-      "name": "Hiệp",
-      "id": 4
+      "id": 2,
+      "name": "Vibrant Portraits of 2020",
+      "image": "https://res.cloudinary.com/fptpolytechnic/image/upload/v1654685195/z3474553454607_44910b874aa0791b59bb718f6e94280a_yq8fml.jpg",
+      "createAt": "2018",
+      "categoryProjectsId": 2,
+      "shortDesc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet"
+    },
+    {
+      "id": 3,
+      "name": "36 Days of Malayalam type",
+      "image": "https://res.cloudinary.com/fptpolytechnic/image/upload/v1654685195/z3474554603474_f4842945579d4df5cdc6c0a45fab8468_uxzatl.jpg",
+      "createAt": "2018",
+      "categoryProjectsId": 3,
+      "shortDesc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet"
+    }
+  ],
+  "categoryProjects": [
+    {
+      "id": 1,
+      "name": "Dashboard"
+    },
+    {
+      "id": 2,
+      "name": "Illustration"
+    },
+    {
+      "id": 3,
+      "name": "Typography"
     }
   ]
 }

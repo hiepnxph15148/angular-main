@@ -1,0 +1,33 @@
+<header class="py-4">
+    <div class="w-[952px] haha mx-auto flex justify-between">
+        <div class="logo"></div>
+        <div class="navbar">
+            <ul class="flex ">
+                <li><a class="px-2" routerLink="work">Works</a></li>
+                <li><a class="px-2"routerLink="/blog">Blog</a></li>
+                <li><a class="px-2" routerLink="contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <h1 class="text-center text-2xl">{{postDetail.title}}</h1>
+    <div class="flex justify-center py-4"> 
+    <a  href=""> <p class="pr-4" >{{postDetail.categoryPost.name}}</p></a>
+    <a  href=""> <p class="" >{{postDetail.createAt}}</p></a>
+    </div>
+    <img src="{{postDetail.image}}" class="m-auto py-4 w-[50%]" alt="">
+    <p class="text-center">{{postDetail.desc}}</p>
+</div>
+<footer class="mx-auto">
+        
+    <div class="footer">
+        <a href=""><img src="https://res.cloudinary.com/fptpolytechnic/image/upload/v1654686821/Vector_yjb74e.png" alt=""></a>
+        <a href=""><img src="https://res.cloudinary.com/fptpolytechnic/image/upload/v1654686821/Linkedin_czscpf.png" alt=""></a>
+        <a href=""><img src="https://res.cloudinary.com/fptpolytechnic/image/upload/v1654686821/fb_zxhrds.png" alt=""></a>
+        <a href=""><img src="https://res.cloudinary.com/fptpolytechnic/image/upload/v1654686821/fb_zxhrds.png" alt=""></a>
+    </div>
+    <p class="text-center">Copyright ©2020 All rights reserved </p>
+ 
+ </footer>
+

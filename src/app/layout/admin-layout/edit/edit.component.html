@@ -1,0 +1,71 @@
+<form #formAdd="ngForm" (ngSubmit)="onUpdate()">
+    <input type="text" 
+    [(ngModel)]="project.name"
+    placeholder="name"
+    name="name"
+    #name="ngModel" 
+    required
+    minlength="2">
+    <div *ngIf="name.errors" class="alert">
+        <div
+        *ngIf="name.errors?.['required'] && (name.dirty || name.touched)"
+            class="alert alert-danger"
+        >
+        Name is required
+        </div>
+        <div
+        *ngIf="name.errors?.['minlength'] && (name.dirty || name.touched)"
+        class="alert alert-danger"
+    >
+        Min length la 2
+    </div>
+
+    </div>
+    <input type="text" 
+    [(ngModel)]="project.image"
+     placeholder="image" 
+     name="image"
+     #image="ngModel" 
+     required
+     minlength="2">
+     <div *ngIf="image.errors" class="alert">
+        <div
+        *ngIf="image.errors?.['required'] && (image.dirty || image.touched)"
+            class="alert alert-danger"
+        >
+        Name is required
+        </div>
+        <div
+        *ngIf="image.errors?.['minlength'] && (image.dirty || image.touched)"
+        class="alert alert-danger"
+    >
+        Min length la 2
+    </div>
+
+    </div>
+    <input type="text"
+     [(ngModel)]="project.desc"
+     placeholder="desc"
+    name="desc"
+    #desc="ngModel" 
+    required
+    minlength="2"
+    >
+    <div *ngIf="desc.errors" class="alert">
+        <div
+        *ngIf="desc.errors?.['required'] && (desc.dirty || desc.touched)"
+            class="alert alert-danger"
+        >
+        Name is required
+        </div>
+        <div
+        *ngIf="desc.errors?.['minlength'] && (desc.dirty || desc.touched)"
+        class="alert alert-danger"
+    >
+        Min length la 2
+    </div>
+
+    </div>
+    
+    <button [disabled]="!formAdd.valid">Update</button>
+</form>

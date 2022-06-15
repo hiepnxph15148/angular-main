@@ -1,0 +1,26 @@
+<form #formAdd="ngForm" (ngSubmit)="onSubmit()">
+    <input type="text" 
+    [(ngModel)]="project.name"
+    placeholder="name"
+    name="name"
+    #name="ngModel" 
+    required
+    minlength="2">
+    <input type="string" 
+    [(ngModel)]="project.image"
+     placeholder="image" 
+     name="image"
+     #image="ngModel" 
+     required
+     minlength="2">
+    <input type="string"
+     [(ngModel)]="project.desc"
+     placeholder="desc"
+    name="desc"
+    #desc="ngModel" 
+    required
+    minlength="2"
+    >
+    
+    <button [disabled]="!formAdd.valid">Add</button>
+</form>
